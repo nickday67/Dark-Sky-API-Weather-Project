@@ -13,6 +13,14 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+.location {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .degree-section {
     display: flex;
     align-items: center;
