@@ -46,7 +46,20 @@ window.addEventListener("load", () => {
     // }
 
     function setIcons(icon, iconID) {
-        const skycons = new Skycons({color: "azure"});
+        const skycons = new Skycons({            
+            "color": {
+                "main" : "azure",
+                "sun" : "yellow",
+                "snow" : "white",
+                "light_cloud" : "lightgrey",
+                "cloud" : "grey",
+                "dark_cloud" : "#444444",
+                "rain" : "dodgerblue",
+                "thunder" : "yellow",
+                "wind" : "green",
+                "moon" : "#f5f3ce"
+            }        
+        });
         const currentIcon = icon.replace(/-/g, "_").toUpperCase();
         skycons.play();
         return skycons.set(iconID, Skycons[currentIcon]);
