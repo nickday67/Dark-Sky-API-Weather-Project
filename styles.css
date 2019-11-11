@@ -8,12 +8,12 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(209, 230, 248), rgb(84, 151, 252), rgb(7, 41, 94));
+    background: linear-gradient(rgb(7, 41, 94), rgb(84, 151, 252), rgb(164, 195, 221));
     color: azure;
     font-family: 'Merriweather', serif;
 }
 
-.location .temperature {
+.location, .temperature {
     height: 30vh;
     width: 50%;
     display: flex;
@@ -38,7 +38,7 @@ body {
 }
 
 .link {
-    color: aliceblue;
+    color: darkblue;
 }
 
 footer {
