@@ -28,15 +28,19 @@ window.addEventListener("load", () => {
                     // Set DOM Elements from the API
                     locationTimezone.textContent = data.timezone;
                     temperatureDegree.textContent = temperature;
-                    temperatureDescription.textContent = summary;    
+                    temperatureDescription.textContent = summary;
+                    // Celsius to Farenheit Formula
+                    let celsius = (temperature - 32) * (5/9);
                     // Set Icons
                     setIcons(icon, document.querySelector(".icon"));
                     // Changing the temperature from Celsius to Farenheit
                     temperatureSection.addEventListener("click", () => {
                         if(temperatureSpan.textContent === "F") {
                             temperatureSpan.textContent = "C";
+                            temperatureDegree.textContent = Math.floor(celsius);
                         } else {
                             temperatureSpan.textContent = "F";
+                            temperatureDegree.textContent = temperature;
                         }
                     });
             });
