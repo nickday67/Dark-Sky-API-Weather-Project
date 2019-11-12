@@ -41,9 +41,7 @@ window.addEventListener("load", () => {
                     });
             });
         });
-    } // else {
-      //  Insert Alert here if the user doesn't allow geolocation
-    // }
+    }
 
     function setIcons(icon, iconID) {
         const skycons = new Skycons({            
@@ -54,7 +52,7 @@ window.addEventListener("load", () => {
                 "light_cloud" : "lightgrey",
                 "cloud" : "grey",
                 "dark_cloud" : "#444444",
-                "rain" : "dodgerblue",
+                "rain" : "powderblue",
                 "thunder" : "yellow",
                 "wind" : "green",
                 "moon" : "#f5f3ce"
