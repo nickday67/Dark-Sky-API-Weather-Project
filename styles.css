@@ -48,10 +48,16 @@ footer {
     font-size: 12px;
 }
 
-@media screen and (min-width: 480px) {
-    
+@media screen and (max-width: 480px) {
+    .location {
+        align-content: center;
+        flex-direction: column;        
+    }
 }
 
-@media screen and (min-width: 780px) {
-    
+@media screen and (max-width: 780px) {
+    .location {
+        align-content: center;
+        flex-direction: column;        
+    }
 }
