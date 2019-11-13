@@ -21,8 +21,13 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.temperature {
+.temperature-section {
     flex-direction: column;
+}
+.temperature-description {
+    flex-direction: column;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .degree-section {
@@ -36,6 +41,18 @@ body {
 }
 .degree-section h2 {
     font-size: 40px;
+}
+
+.humidity-section {
+    display: flex;
+    align-items: center;
+}
+.humidity-section span {
+    margin: 10px;
+    font-size: 18px;
+}
+.humidity-section h3 {
+    font-size: 20px;
 }
 
 .link {
